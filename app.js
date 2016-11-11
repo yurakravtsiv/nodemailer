@@ -1,10 +1,3 @@
-/*
-* Author: Rohit Kumar
-* Date: 24-06-2015
-* Website: iamrohit.in
-* App Name: Node Emailer
-* Description: NodeJs script to send emails
-*/
 var http=require('http');
 var express=require('express');
 var nodemailer = require("nodemailer");
