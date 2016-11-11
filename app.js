@@ -29,7 +29,7 @@ if(req.body.email == "" || req.body.subject == "") {
 }
 // Sending Email Without SMTP
 nodemailer.mail({
-    from: "Node Emailer ✔ <no-reply@iamrohit.in>", // sender address
+    from: "2bubbiescookies - Order ✔ <2bubbiescookies.sender@gmail.com>", // sender address
     to: req.body.email, // list of receivers
     subject: req.body.subject+" ✔", // Subject line
     //text: "Hello world ✔", // plaintext body
@@ -39,17 +39,17 @@ res.send("Email has been sent successfully");
  
    // Sending Emails with SMTP, Configuring SMTP settings
  
-    /*var smtpTransport = nodemailer.createTransport("SMTP",{
+    var smtpTransport = nodemailer.createTransport("SMTP",{
              host: "smtp.gmail.com", // hostname
     secureConnection: true, // use SSL
     port: 465, // port for secure SMTP
             auth: {
-                 user: "rohit0kumar@hotmail.com",
-                 pass: "['YourHotmailPassword']"
+                 user: "2bubbiescookies.sender@gmail.com",
+                 pass: "['2bubbiescookies']"
             }
         });
         var mailOptions = {
-            from: "Node Emailer ✔ <no-reply@iamrohit.in>", // sender address
+            from: "2bubbiescookies - Order ✔ <2bubbiescookies.sender@gmail.com>", // sender address
             to: req.body.email, // list of receivers
             subject: req.body.subject+" ✔", // Subject line
             //text: "Hello world ✔", // plaintext body
@@ -61,7 +61,7 @@ res.send("Email has been sent successfully");
         }else{
              res.send("Email has been sent successfully");
         } 
-    }); */
+    }); 
 });
  
 // Starting server
