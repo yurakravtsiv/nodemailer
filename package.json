@@ -2,9 +2,15 @@
   "name": "NodeJs-Emailer",
   "version": "0.0.1",
   "description": "NodeJs email form to send email using nodejs",
+  "main": "app.js",
+  "author": "yura",
+  "license": "MIT",
   "dependencies": {
     "nodemailer": "~0.7.0",
     "express": "~3.4.0",
     "body-parser": "~1.13.1"
+  },
+  "engines": {
+    "node": "4.6.1"
   }
 }
